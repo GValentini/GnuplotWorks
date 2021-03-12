@@ -1,0 +1,16 @@
+set ytics 2.0; set mytics default
+set xrange [-2.0:2.0]
+set xtics 0.5
+set key at 1.5, -6.0
+set samples 40
+
+
+# solution of the Homogeneous Linear 2nd order ODE:
+# d2x/dt2 + 3*dx/dt + 2*x = 0
+c1 = -1
+c2 = 2
+f(x) = c1*exp(-2*x) + c2*exp(-x)
+plot f(x) lw 2
+set grid
+
+

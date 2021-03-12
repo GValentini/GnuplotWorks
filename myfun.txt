@@ -1,0 +1,10 @@
+set ytics 20.0; set mytics 2
+set xrange [-5:5]
+set xtics 1.0; set mxtics 4   #("-pi" -pi, "-pi/2" -pi/2, 0, "pi/2" pi/2, "pi" pi)
+set key at -2.0, 20.0
+set samples 20
+f(x) = x**3 - 4*(x**2) + 9*x + 3
+plot f(x) with linespoints pt 13 lt 3 lw 1
+set grid
+
+

@@ -1,0 +1,13 @@
+set ytics 0.5; set mytics 5
+set xrange [-pi:pi]
+set xtics ("-pi" -pi, "-pi/2" -pi/2, 0, "pi/2" pi/2, "pi" pi)
+set samples 200
+
+# solution of the Homogeneous Linear 2nd order ODE:
+# d2x/dt2 + x = 0
+c1 = 2
+c2 = 1
+f(x) = c1*cos(x) + c2*sin(x)
+plot f(x) lw 2, sin(x) lw 2
+set grid
+

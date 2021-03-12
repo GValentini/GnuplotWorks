@@ -1,0 +1,20 @@
+set term wxt
+set polar
+
+set xtics 4.0
+set mxtics 2
+set ytics 4.0
+set mytics 2
+set size square
+
+set samples 200
+set trange [0:8*pi]
+
+f(t) = b*exp(a*t)	# f(t) = b*exp(a*(8*pi-t)) for a clockwise orientation
+
+a = 0.15
+b = 0.2
+plot f(t) title "Logarithmic Spiral" with lines lt 3 lw 2
+
+unset polar
+
